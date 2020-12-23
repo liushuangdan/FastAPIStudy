@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传文件</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/file/" enctype="multipart/form-data" method="post">
+            <input type="file" name="files_list" multiple><br><br>
+            <input type="file" name="files_name" multiple><br><br>
+            <input type="submit" value="点击这里显示文件名字与大小">
+        </form>
+        <br>
+        <br>
+        <br>
+
+        <form action="/create_file/" enctype="multipart/form-data" method="post">
+            <input type="file" name="file" multiple><br><br>
+            <input type="file" name="fileb" multiple><br><br>
+            <input type="text" name="notes" multiple><br><br>
+            <input type="submit" value="点击这里显示文件属性">
+        </form>
+
+    </div> <!-- /container -->
+</body>
+</html>
